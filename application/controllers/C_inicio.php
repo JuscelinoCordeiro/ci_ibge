@@ -122,7 +122,7 @@ class C_inicio extends CI_Controller
 			echo $cadastro;
 		} else {
 			$info['titulo'] = "Tela cadastro de bairro";
-			$info['descricao'] = "Cadastro de bairro em um estado espec�fico";
+			$info['descricao'] = "Cadastro de bairro em um estado específico";
 
 			$this->load->view('inc/v_inc_cadBairro', $info);
 		}

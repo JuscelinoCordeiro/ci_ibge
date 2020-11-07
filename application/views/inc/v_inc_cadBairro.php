@@ -141,7 +141,7 @@ $(document).ready(function() {
                 idEstado: estado,
                 idMunicipio: municipio,
                 bairro: bairro,
-                cadastrar: true
+                cadastrar: 1
             },
             beforeSend: function(xhr) {
                 xhr.overrideMimeType("text/plain; charset=UTF-8");
@@ -149,8 +149,11 @@ $(document).ready(function() {
             complete: function() {},
             success: function(data) {
                 if (data == '1') {
-                    $("#modal").modal('');
-                    $("#visualizarTexto").html("<h2>Bairro Cadastrado com Sucesso.</h2>");
+                //     $("#visualizarTexto").html(data);
+                // $("#visualizar").modal('show');
+                //     $("#modal").modal('');
+                $("#modal").modal('hide');
+                    $("#visualizarTexto").html("<center><h3>Bairro Cadastrado com Sucesso.</h3></center>");
                     $("#visualizar").modal('show');
                 } else {
                     $("#erro").modal('');
@@ -164,7 +167,6 @@ $(document).ready(function() {
                 $("#erro").modal('show');
             }
         });
-        // };
 
     });
 
