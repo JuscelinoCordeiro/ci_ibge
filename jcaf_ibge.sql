@@ -7,10 +7,13 @@
 -- Versão do servidor: 10.1.28-MariaDB
 -- PHP Version: 5.6.32
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
+SET SQL_MODE
+= "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT
+= 0;
 START TRANSACTION;
-SET time_zone = "+00:00";
+SET time_zone
+= "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -28,10 +31,14 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `bairro`
 --
 
-CREATE TABLE `bairro` (
-  `ID_BAIRRO` int(7) NOT NULL,
-  `NM_BAIRRO` varchar(200) NOT NULL,
-  `ID_MUNI_IBGE` int(11) NOT NULL
+CREATE TABLE `bairro`
+(
+  `ID_BAIRRO` int
+(7) NOT NULL,
+  `NM_BAIRRO` varchar
+(200) NOT NULL,
+  `ID_MUNI_IBGE` int
+(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -40,19 +47,28 @@ CREATE TABLE `bairro` (
 -- Estrutura da tabela `muni_ibge`
 --
 
-CREATE TABLE `muni_ibge` (
-  `ID_MUNI_IBGE` int(7) NOT NULL,
-  `NM_MUNI` varchar(200) DEFAULT NULL,
-  `ID_UF_IBGE` int(2) DEFAULT NULL,
-  `POPULACAO_1991` int(10) DEFAULT NULL,
-  `POPULACAO_2000` int(10) DEFAULT NULL
+CREATE TABLE `muni_ibge`
+(
+  `ID_MUNI_IBGE` int
+(7) NOT NULL,
+  `NM_MUNI` varchar
+(200) DEFAULT NULL,
+  `ID_UF_IBGE` int
+(2) DEFAULT NULL,
+  `POPULACAO_1991` int
+(10) DEFAULT NULL,
+  `POPULACAO_2000` int
+(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `muni_ibge`
 --
 
-INSERT INTO `muni_ibge` (`ID_MUNI_IBGE`, `NM_MUNI`, `ID_UF_IBGE`, `POPULACAO_1991`, `POPULACAO_2000`) VALUES
+INSERT INTO `muni_ibge` (`
+ID_MUNI_IBGE`,
+`NM_MUNI
+`, `ID_UF_IBGE`, `POPULACAO_1991`, `POPULACAO_2000`) VALUES
 (1100015, 'Alta Floresta D Oeste', 11, 31980, 26533),
 (1100023, 'Ariquemes', 11, 83684, 74503),
 (1100031, 'Cabixi', 11, 8174, 7518),
@@ -1253,7 +1269,10 @@ INSERT INTO `muni_ibge` (`ID_MUNI_IBGE`, `NM_MUNI`, `ID_UF_IBGE`, `POPULACAO_199
 (2411502, 'Santo Antônio', 24, 19217, 20107),
 (2411601, 'São Bento do Norte', 24, 8943, 3378),
 (2411700, 'São Bento do Trairí', 24, 3239, 3244);
-INSERT INTO `muni_ibge` (`ID_MUNI_IBGE`, `NM_MUNI`, `ID_UF_IBGE`, `POPULACAO_1991`, `POPULACAO_2000`) VALUES
+INSERT INTO `muni_ibge` (`
+ID_MUNI_IBGE`,
+`NM_MUNI
+`, `ID_UF_IBGE`, `POPULACAO_1991`, `POPULACAO_2000`) VALUES
 (2411809, 'São Fernando', 24, 3504, 3234),
 (2411908, 'São Francisco do Oeste', 24, 2795, 3480),
 (2412005, 'São Gonçalo do Amarante', 24, 45461, 69435),
@@ -2471,7 +2490,10 @@ INSERT INTO `muni_ibge` (`ID_MUNI_IBGE`, `NM_MUNI`, `ID_UF_IBGE`, `POPULACAO_199
 (3115805, 'Centralina', 31, 13783, 10236),
 (3115904, 'Chácara', 31, 3257, 2370),
 (3116001, 'Chalé', 31, 5529, 5663);
-INSERT INTO `muni_ibge` (`ID_MUNI_IBGE`, `NM_MUNI`, `ID_UF_IBGE`, `POPULACAO_1991`, `POPULACAO_2000`) VALUES
+INSERT INTO `muni_ibge` (`
+ID_MUNI_IBGE`,
+`NM_MUNI
+`, `ID_UF_IBGE`, `POPULACAO_1991`, `POPULACAO_2000`) VALUES
 (3116100, 'Chapada do Norte', 31, 15790, 15225),
 (3116159, 'Chapada Gaúcha', 31, 0, 7270),
 (3116209, 'Chiador', 31, 2900, 2958),
@@ -3687,7 +3709,10 @@ INSERT INTO `muni_ibge` (`ID_MUNI_IBGE`, `NM_MUNI`, `ID_UF_IBGE`, `POPULACAO_199
 (3532603, 'Nhandeara', 35, 10343, 10194),
 (3532702, 'Nipoã', 35, 2796, 3267),
 (3532801, 'Nova Aliança', 35, 4194, 4768);
-INSERT INTO `muni_ibge` (`ID_MUNI_IBGE`, `NM_MUNI`, `ID_UF_IBGE`, `POPULACAO_1991`, `POPULACAO_2000`) VALUES
+INSERT INTO `muni_ibge` (`
+ID_MUNI_IBGE`,
+`NM_MUNI
+`, `ID_UF_IBGE`, `POPULACAO_1991`, `POPULACAO_2000`) VALUES
 (3532827, 'Nova Campina', 35, 0, 7295),
 (3532843, 'Nova Canaã Paulista', 35, 0, 2483),
 (3532868, 'Nova Castilho', 35, 0, 991),
@@ -4913,7 +4938,10 @@ INSERT INTO `muni_ibge` (`ID_MUNI_IBGE`, `NM_MUNI`, `ID_UF_IBGE`, `POPULACAO_199
 (4312252, 'Minas do Leão', 43, 0, 7321),
 (4312302, 'Miraguaí', 43, 5999, 5034),
 (4312351, 'Montauri', 43, 1786, 1684);
-INSERT INTO `muni_ibge` (`ID_MUNI_IBGE`, `NM_MUNI`, `ID_UF_IBGE`, `POPULACAO_1991`, `POPULACAO_2000`) VALUES
+INSERT INTO `muni_ibge` (`
+ID_MUNI_IBGE`,
+`NM_MUNI
+`, `ID_UF_IBGE`, `POPULACAO_1991`, `POPULACAO_2000`) VALUES
 (4312377, 'Monte Alegre dos Campos', 43, 0, 3040),
 (4312385, 'Monte Belo do Sul', 43, 0, 2880),
 (4312401, 'Montenegro', 43, 49099, 54692),
@@ -5624,16 +5652,22 @@ INSERT INTO `muni_ibge` (`ID_MUNI_IBGE`, `NM_MUNI`, `ID_UF_IBGE`, `POPULACAO_199
 -- Estrutura da tabela `regiao_ibge`
 --
 
-CREATE TABLE `regiao_ibge` (
-  `ID_REGIAO_IBGE` int(1) NOT NULL,
-  `NM_REGIAO_IBGE` varchar(50) NOT NULL
+CREATE TABLE `regiao_ibge`
+(
+  `ID_REGIAO_IBGE` int
+(1) NOT NULL,
+  `NM_REGIAO_IBGE` varchar
+(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `regiao_ibge`
 --
 
-INSERT INTO `regiao_ibge` (`ID_REGIAO_IBGE`, `NM_REGIAO_IBGE`) VALUES
+INSERT INTO `regiao_ibge` (`
+ID_REGIAO_IBGE`,
+`NM_REGIAO_IBGE
+`) VALUES
 (1, 'Norte'),
 (2, 'Nordeste'),
 (3, 'Sudeste'),
@@ -5646,18 +5680,26 @@ INSERT INTO `regiao_ibge` (`ID_REGIAO_IBGE`, `NM_REGIAO_IBGE`) VALUES
 -- Estrutura da tabela `uf_ibge`
 --
 
-CREATE TABLE `uf_ibge` (
-  `ID_UF_IBGE` int(2) NOT NULL,
-  `ID_REGIAO_IBGE` int(1) DEFAULT NULL,
-  `SIGLA_UF` char(2) DEFAULT NULL,
-  `NM_UF` varchar(100) DEFAULT NULL
+CREATE TABLE `uf_ibge`
+(
+  `ID_UF_IBGE` int
+(2) NOT NULL,
+  `ID_REGIAO_IBGE` int
+(1) DEFAULT NULL,
+  `SIGLA_UF` char
+(2) DEFAULT NULL,
+  `NM_UF` varchar
+(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `uf_ibge`
 --
 
-INSERT INTO `uf_ibge` (`ID_UF_IBGE`, `ID_REGIAO_IBGE`, `SIGLA_UF`, `NM_UF`) VALUES
+INSERT INTO `uf_ibge` (`
+ID_UF_IBGE`,
+`ID_REGIAO_IBGE
+`, `SIGLA_UF`, `NM_UF`) VALUES
 (11, 1, 'RO', 'Rondônia'),
 (12, 1, 'AC', 'Acre'),
 (13, 1, 'AM', 'Amazonas'),
@@ -5694,25 +5736,29 @@ INSERT INTO `uf_ibge` (`ID_UF_IBGE`, `ID_REGIAO_IBGE`, `SIGLA_UF`, `NM_UF`) VALU
 -- Indexes for table `bairro`
 --
 ALTER TABLE `bairro`
-  ADD PRIMARY KEY (`ID_BAIRRO`);
+ADD PRIMARY KEY
+(`ID_BAIRRO`);
 
 --
 -- Indexes for table `muni_ibge`
 --
 ALTER TABLE `muni_ibge`
-  ADD PRIMARY KEY (`ID_MUNI_IBGE`);
+ADD PRIMARY KEY
+(`ID_MUNI_IBGE`);
 
 --
 -- Indexes for table `regiao_ibge`
 --
 ALTER TABLE `regiao_ibge`
-  ADD PRIMARY KEY (`ID_REGIAO_IBGE`);
+ADD PRIMARY KEY
+(`ID_REGIAO_IBGE`);
 
 --
 -- Indexes for table `uf_ibge`
 --
 ALTER TABLE `uf_ibge`
-  ADD PRIMARY KEY (`ID_UF_IBGE`);
+ADD PRIMARY KEY
+(`ID_UF_IBGE`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -5722,8 +5768,17 @@ ALTER TABLE `uf_ibge`
 -- AUTO_INCREMENT for table `bairro`
 --
 ALTER TABLE `bairro`
-  MODIFY `ID_BAIRRO` int(7) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_BAIRRO` int
+(7) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE bairro RENAME BAIRRO;
+ALTER TABLE muni_ibge RENAME MUNI_IBGE;
+ALTER TABLE regiao_ibge RENAME REGIAO_IBGE;
+ALTER TABLE uf_ibge RENAME UF_IBGE;
+
 COMMIT;
+
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
