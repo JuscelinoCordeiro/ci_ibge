@@ -3,7 +3,6 @@
 	<div class="col-md-3"></div>
 
 	<div class="col-md-6" id="corpo">
-		<p>Teste de consulta ao banco</p>
 		<pre class="text-center"><?="Minha região é $minhaRegiao"?>
 		</pre>
 
@@ -43,27 +42,18 @@
 				<button class="btn btn-default" id="btnBuscarMuniEst">Buscar</button>
 			</fieldset>
 		</form>
-
+		<br>
+		<br>
+		<br>
 		<div id="bairros">
 			<h3>Cadastro de bairros</h3>
 			<hr>
 			<button id="btnCadBairro" class="btn btn-info btn-small" value="cadBairro">Cadastrar Bairro</button>
+			<button id="btnListBairro" class="btn btn-success btn-small" value="cadBairro">Listar Bairro</button>
 		</div>
-		<?php
-
-			//			if (isset($muniEstado)) {
-			//				echo '<pre>';
-			//				print_r($muniEstado);
-			//				echo '</pre>';
-			//			}
-
-		?>
+		
 
 		<br><br>
-		<!--		<button type="button" class="btn btn-danger btn-small" id="btnMyModal">-->
-		<!--			Chamar Modal-->
-		<!--		</button>-->
-
 		<br><br>
 		<p class="footer">Page rendered in <strong>{elapsed_time}</strong>
 			seconds. <?php echo (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?>
